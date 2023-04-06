@@ -1,10 +1,21 @@
-<script setup>
-import { ref } from "vue";
-
+<script>
+import NavBar from './components/NavBar.vue'
+import TopHome from './components/TopHome.vue'
+import USP from './components/USP.vue'
+export default {
+  name: 'App',
+  components: {
+    NavBar,
+    TopHome,
+    USP,
+  }
+}
 </script>
 
 <template>
- <h1>Hi</h1>
+  <NavBar />
+  <TopHome />
+  <USP />
 </template>
 
 <style scoped>
